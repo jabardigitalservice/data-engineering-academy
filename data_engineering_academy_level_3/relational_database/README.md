@@ -13,7 +13,8 @@ Primary Key atau kunci utama ini menyimpan suatu nilai unik dalam database dan d
 
 Sedangkan Secondary Key atau lebih dikenal sebagai Foreign Key berfungsi untuk menghubungkan tabel. Foreign key tidak dapat mengidentifikasi sebuah baris namun dapat menerima nilai yang NULL. Atribut yang menjadi Foreign Key di tabel lain haruslah atribut yang menjadi Primary di tabel asalnya.
  
-
+#
+#
 # **Apa itu ERD?**
 Entity Relation Diagram merupakan sebuah model yang dapat mewakili logika database untuk menggambarkan hubungan antar entitas beserta atribut yang dimiliki secara detail. Dengan menggunakan ERD maka sistem database yang diancang atau dibangun dapat tergambarkan secara rapi detail serta terstruktur. Tidak hanya digunakan saat ingin membangun sistem database namun ERD juga dapat digunakan saat proses debugging  jika ditemukan adanya permasalahan pada sistem karena dengan gambaran skema database yang menggunakan ERD dapat membantu untuk menemukan dan mengatasi permasalahan yang terjadi.
  
@@ -74,6 +75,7 @@ ERD diatas merupakan contoh sederhana dengan mengambil sistem klinik sederhana d
 | Dokter   | Id Dokter, Nama Dokter, Poli                       |
 | Pasien   | Id Pasien, Nama Pasien, Usia, Keluhan              |
 | Obat     | Id Obat, Nama Obat, Harga Obat, Dosis, Jenis Obat  |
+|                                                               |
 
 **Entitas	Atribut**
 
@@ -82,6 +84,8 @@ Entitas dokter dan entitas pasien dihubungkan dengan relasi Rekam Medis lalu ant
  
 Selain itu juga terdapat kardinalitas antara setiap entitas dan relasi. Seperti pada contoh diatas yaitu setiap (1) dokter dapat mengisi banyak (M) rekam medis untuk banyak (M) pasien.  Atau jika dibalik maka setiap (1) pasien memiliki (1) rekam medis yang dibuat oleh (1) dokter yang menanganinya. Lalu (1) dokter dapat memberikan banyak (M) resep dan setiap (1) resepnya dapat terdiri dari beberapa (M) obat. Dan terakhir untuk setiap (1) pasien mendapat (1) resep dari dokter.
 
+#
+#
 # **SQL**
 Kependekan dari Structured Query Language merupakan bahasa baku pemrograman berorientasi himpunan (Set Oriented Language). SQL merupakan bahasa yang digunakan untuk mengakses serta mengolah database. SQL dikeluarkan sesuai standar American National Standards Institute. 
 Tugas-tugas seperti pengambilan dan update adalah tugas dari SQL. Dengan SQL kita dapat membuat database dan struktur tabel, membuat query yang sederhana bahkan kompleks untuk input, update dan juga delete data dari database. Selain itu banyak sistem manajemen database relasional yang menggunakan SQL seperti Microsoft SQL Server, Oracle, Access, Ingres, Sybase dan masih banyak lagi.  
@@ -219,7 +223,8 @@ Jika fungsi min untuk mencari nilai terkecil maka max adalah untuk mencari suatu
  
 ![Max](https://github.com/jabardigitalservice/data-engineering-academy/blob/c6f08ec0a8fbe6a8e9f345f8bc79700a8a24ce79/data_engineering_academy_level_3/relational_database/images/max.png)
  
- 
+#
+#
 # **Apa  Itu OLAP dan OLTP?**
  
 **OLAP**
@@ -268,18 +273,72 @@ Kebalikan dari ROLAP dengan MOLAP penyimpanan data dilakukan dalam specialised m
 
 3. HOLAP (Hybrid Online Analytical Processing)
 HOLAP dapat memudahkan dan memungkinkan menganalisis data serta mengambil keputusan dalam penyimpanan data menggunakan struktur ROLAP atau MOLAP karena HOLAP gabungan dari kedua struktur tersebut.
-
  
 **OLTP**
 
 Online Transaction Processing ini bertujuan untuk memproses data dan data yang dimaksud adalah data transaksi sehari-hari yang biasanya memiliki arsitektur yang bertingkat. Pada kehidupan sehari-hari contoh OLTP dapat kita lihat pada transaksi ATM atau kartu kredit. Data transaksi tersebut dikelola dengan baik seperti memperbarui data, menyisipkan atau menghapus. Tidak hanya itu dengan OLTP data penting organisasi dapat terekam dengan baik seperti data manajemen, produksi, karyawan, pelanggan, pembelian atau penjualan dan masih banyak lagi. 
 
-Penggunaan OLTP maka dapat menghemat waktu pemrosesan dan juga ruang karena dibangun dengan query yang sederhana selain itu lebih cepat dan multi akses secara langsung oleh end user. Data OLTP juga merupakan current data yang detail karena dirancang menggunakan ERD sehingga dapat memudahkan dalam pengambilan keputusan Hasil akhir dari OLTP nantinya dapat membantu pengambilan keputusan serta dapat menjadi sumber data pada OLAP.
+Penggunaan OLTP maka dapat menghemat waktu pemrosesan dan juga ruang karena dibangun dengan query yang sederhana selain itu lebih cepat serta multi akses secara langsung oleh end user. Pada sistem OLTP data akan dinormalisasikan dan dipecah menjadi bagian yang lebih kecil selain itu sistem OLTP dapat menjaha integritas data serta mampu memproses data transaksi yang besar dengan mandiri.
+
+Data OLTP juga merupakan current data yang detail karena dirancang menggunakan ERD sehingga dapat memudahkan dalam pengambilan keputusan. Hasil akhir dari OLTP selain nantinya dapat membantu pengambilan keputusan namun dapat menjadi sumber data pada OLAP. Lalu kapan penggunaan OLTP dibutuhkan? Penggunaan OLTP dapat digunakan saat dibutuhkan proses serta penyimpanan data transaksi yang efisien dan dapat tesedia secara konsisten. 
+
+![OLAP vs OLTP](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/relational_database/images/olap%20vs%20oltp.png)
+
+**OLAP vs OLTP**
+
+Keduanya tentu memiliki karakteristik masing-masing seperti OLAP yang diperuntukan mencari informasi sedangkan OLTP lebih fokus pada operasi atau pengelolaan. Beberapa indikator penting yang dapat memudahkan dalam mengidentifikasi OLAP serta OLTP dalam dilihat pada tabel berikut.
+
+| Parameter          | OLAP                                                       | OLTP                                                                   |
+| -------------------| -----------------------------------------------------------|------------------------------------------------------------------------|
+| Karakteristik      | Mengelola data dengan jumlah besar dalam beberapa database | Mengelola data transaksi kecil dalam jumlah besar setiap harinya       |
+| Tujuan             | Mencari insight untuk mendukung pengambilan keputusan      | Mendukung operasi kebutuhan organisasi secara real-time                |
+| Bidang             | Indstri (Manufaktur, Travel, Keuangan, dll)                | Subjek (Pemasaran, Keuangan, Advertising, dll)                         |
+| Desain Database    | Normalisasi                                                | Denormalisasi                                                          |
+| Penyimpanan        | Lebih kecil (dengan pengarsipan secara berkala)            | Lebih besar                                                            |
+| Query              | Sederhana                                                  | Rumit                                                                  |
+| Kecepatan Respon   | Dapat merespon dalam kurun waktu milidetik (ms)            | Merespon mulai detik hingga jam sesuai dengan jumlah data              |
+| Sumber Data        | Transaksi                                                  | Data OLTP, situs web, aplikasi, dll                                    |
+| Target Pengguna    | Pasar                                                      | Pelanggan                                                              |
+| Kapasitas Pengguna | Ribuan pengguna dalam 1 waktu sekaligus                    | Hanya beberapa pengguna dalam 1 waktu                                  |
+|                                                                                                                                                          |
+#
+# **Database On Cloud dan On Premise**
+
+**On Cloud**
+
+Pada teknologi on cloud memungkinan iternet menjadi pusat untuk mengelola database dan juga aplikasi yang hanya bisa diakses bagi oleh pemilik hak akses. Dengan teknologi cloud tidak hanya database dan aplikasi atau perangkat lunak yang dapat berbagi layanan internet namun juga server, jaringan serta penyimpanan. Layanan yang didapatkan dari cloud provider dibayar oleh pengguna secara "Pay as You Go" sehingga pengguna dapat membayar sesuai kebutuhan baik untuk meningkatkan atau menurunkan penggunaan dengan begitu maka pengguna dapat menekan biaya alih-alih membeli atau upgrade server.
+
+Cloud Database merupakan database yang disimpan kedalam cloud untuk memudahkan konfigurasi seperti dengan 2 cara hosting cloud database yaitu IaaS atau Infrastructure as a Service atau Paas Platform as a Service. Beberapa aplikasi ini sudah menerapkan cloud database diantaranya Microsoft SQL Azure Database, Socrata dan Xeround. 
+
+Penggunaan on cloud memiliki beberapa manfaat dan kelebihan dibanding dengan on premise karena on cloud menawarkan daya tahan serta ketersediaan yang lebih lama selain itu on cloud juga menawarkan efisiensi biaya dengan metode "Pay as You Go" serta kemudahan pemeliharaan baik dari kerusakan ataupun pencadangan.
+
+Namun dibalik kemudahan dan efisien biaya kekurangan on cloud juga dapat menjadi pertimbangan sepeti keamaannya dan risiko terlebih jika provider hosting cloud database berbeda negara dengan pengguna. Selain itu kontrol atas performa dan konektivitas juga memerlukan jaminan jika sewaktu-waktu pengguna kehilangan kendali performa baik data atau pun fasilitas internet untuk mengakses data. 
+
+
+**On Premise**
+
+ Jika on cloud database disimpan di cloud maka on premise sebaliknya database dan segala sesuatunya disimpan oleh organisasi atau perusahaan itu sendiri atau istilahnya adalah disimpan secara in-house karena organisasi aatu perusahaan tersebut yang akan mengelola seluruh infrastruktur. Metode ini dapat digunakan pada organisasi atau perusahaan yang memiliki cukup ruang untuk menyimpan perangkat infrastruktur database tersebut dan mampu mengelolanya. 
  
- 
- 
- 
- 
+ Sering disebut juga sebagai database tradisional dimana didalamnya terdapat sistem terstruktur antara relational database dan database warehouse yang bekerja sama pada suatu infrastuktur yang dipasang di pusat data lokal. Maka dari itu metode on premise ini membutuhkan departemen IT yang bertugas memelihara dan menjaga perangkat keras serta perangkat lunaknya dapat bekerja dengan baik.  
+
+ **Perbedaan On Cloud dan On Premise**
+
+
+![On Cloud vs On Premise](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/relational_database/images/cloud%20vs%20prem.png)
+
+
+|Parameter  | On Cloud                                                            | On Premise                                                                                    |
+|-----------| --------------------------------------------------------------------| ----------------------------------------------------------------------------------------------|
+| Sistem    | Terbagi menjadi Public, Private dan Hybrid Cloud                    | Sumber daya di deploy mandiri secara in-house                                                 |
+| Kendali   | Akses data dibawah kendali prover penyedia                          | Kendali penuh oleh pengguna (organisasi atau perusahaan)                                      |
+| Akses     | Dapat diakses kapanpun dan dimanapun dengan terhubung ke internet   | Kemudahan akses serta dapat memindahkan data ke server tertentu jika dibutuhkan               | 
+| Keamanan  | Memungkinan combine infrastuktur data terjaga aman                  | Memudahkan dalam mengatur siapa saja yang memilki akses serta menerapkan keamanan ganda       | 
+| Biaya     | Hanya membayar sesuai pemakaian (Pah as You go)                     | Semua beban biaya pengadaan perangkat keras dan perangkat lunak, server, komsumsi daya, dll   |     
+| Keamanan  | Memungkinan combine infrastuktur data terjaga aman                  | Memudahkan dalam mengatur siapa saja yang memilki akses serta menerapkan keamanan ganda       | 
+| Regulasi  | Memastikan kesesuaian relugasi provider                             | Mematuhi dan memastikan sisten yang dibuat sudah sesuai denga regulasi yang berlaku           |     
+|                                                                                                                                                                                 |  
+ #
+# **Database Non-Relasional**
 
 
 
@@ -291,10 +350,7 @@ Penggunaan OLTP maka dapat menghemat waktu pemrosesan dan juga ruang karena diba
 
 
 
-
-
-
-Referensi
+**Referensi**
  
 https://dosenit.com/kuliah-it/database/database-relasional
 https://www.dicoding.com/blog/memahami-erd/
@@ -309,9 +365,19 @@ https://kelasprogrammer.com/belajar-penggunaan-function-di-mysql/
 https://chat.openai.com/c/27daecbb-1aad-4f67-8120-d3d0f1bf3c2a
 https://glints.com/id/lowongan/data-mart-adalah/#.ZDtdLXZBzIV
 http://digilib.mercubuana.ac.id/manager/t%21@file_artikel_abstrak/Isi_Artikel_185328192270.pdf
+https://dosenit.com/tekno/perbedaan-oltp-vs-olap
+https://lamanit.com/online-transaction-processing/
+https://sis.binus.ac.id/2023/01/06/cloud-database-vs-traditional-database/
+https://gits.id/blog/on-premise-vs-cloud-terbaik/
 https://www.canva.com/design
 https://carbon.now.sh/
-https://dosenit.com/tekno/perbedaan-oltp-vs-olap
- 
-
-
+https://pixabay.com/
+https://www.datensen.com/
+https://www.domainesia.com/
+https://liwato.blogspot.com/
+https://www.shutterstock.com/id/search/olap
+https://www.complexsql.com/what-is-snowflake-schema-with-industry-examples/
+https://www.geeksforgeeks.org/fact-constellation-in-data-warehouse-modelling/
+https://ashutosh-bitmesra.medium.com/oltp-and-olap-what-are-the-differences-a6e21f25bfe0
+https://www.freepik.com/free-photos-vectors/database/2
+https://www.jojonomic.com/
