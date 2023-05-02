@@ -1,6 +1,6 @@
 # **Database Non-Relasional**
 
-![NoSQL](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/relational_database/images/sql%20vs%20no%20sql.png)
+![NoSQL](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/non-relational_database/images/sql%20vs%20no%20sql.png)
 
 Database Non-Relasional atau sering juga disebut dengan istilah NoSQL atau singkatan dari Not Only SQL. NoSQL ini merupakan jenis database yang tidak mengikuti struktur data tabular kolom baris pada umumnya serta tidak memerlukan skema dan relasi pada setiap tabelnya. Dengan begitu NoSQL dapat mengelola database yang skema yang lebih fleksibel dengan skalabilias yang tinggi serta query yang lebih sederhana. Struktur penyimpanan datanya pun dapat dioptimalisasikan sesuai dengan kebutuhan data yang disimpan. 
 
@@ -18,7 +18,7 @@ Salah satu jenis yang sederhana karena menyimpan database berupa pasangan Key ya
 
 Penyimpanan ini memiliki memanfaatkan manfaat dari NoSQL namun dengan struktur seperti relational database. Beberapa contoh database Key Value ini seperti Redis, Riak, DynamoDB dan Memcached.
 
-![Key Value Stores](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/relational_database/images/con-key%20value.png)
+![Key Value Stores](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/non-relational_database/images/con-key%20value.png)
 
 2. **Column Stores**
 
@@ -28,7 +28,7 @@ Berbeda dengan relational database dengan jenis ini variasi lebih luas dalam car
 
 Contoh database Column Stores diantaranya yaitu Hbase, Datastax Enterprise, Apache Accumulo dan Cassandra.
 
-![Column Stores](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/relational_database/images/con-column.png)
+![Column Stores](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/non-relational_database/images/con-column.png)
 
 3. **Document Stores**
 
@@ -36,7 +36,7 @@ Hampir mirip dengan Key Value namun disimpan menjadi dokumen dengan format JSON 
 
 Dengan database document pengembang dapat menyimpan query di dalam database. Sifat dokumen ini memungkinan untuk berevolusi sesuai kebutuhan dan seiring waktu karena fleksibel dan semi-terstruktur. Beberapa database jenis document ini contohnya CouchDB, Couchbase, MongoDB, Amazon SimpleDB dan Google Firebase.
 
-![Document Stores](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/relational_database/images/con-document.png)
+![Document Stores](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/non-relational_database/images/con-document.png)
 
 4. **Graph Stores**
 
@@ -44,13 +44,11 @@ Database jenis ini memiliki struktur grafik yang terdiri dari node dan edge. Dim
 
 Jenis ini digunakan dalam menemukan pola terhubung dalam data yang tidak atau pun semi terstruktur dan biasa digunakan untuk data spasial bahkan juga sering digunakan untuk mendeteksi penipuan dan juga media sosial serta mesin rekomendasi. COntoh databasenya yaitu JanusGraph, InfiniteGraph dan Neo4J.
 
-![Graph Stores](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/relational_database/images/con-graph.png)
+![Graph Stores](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/non-relational_database/images/con-graph.png)
 
 5. **Multi Model**
 
-Jenis ini merupakan gabungan dari beberapa jenis database namun juga memadukan kedua tipe database yaitu antara relational database dan non-relational.
-
- Biasanya digunakan untuk sistem yang membutuhkan lebih dari satu tipe database dalam satu waktu sekaligus contohnya seperti SQL Server, MySQL, PostgreSQL Oracle dan juga MongoDB.
+Jenis ini merupakan gabungan dari beberapa jenis database namun juga memadukan kedua tipe database yaitu antara relational database dan non-relational. Biasanya digunakan untuk sistem yang membutuhkan lebih dari satu tipe database dalam satu waktu sekaligus contohnya seperti SQL Server, MySQL, PostgreSQL Oracle dan juga MongoDB.
 
 ## **Perbedaan NoSQL dan SQL**
 

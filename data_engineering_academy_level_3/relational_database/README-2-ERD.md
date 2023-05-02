@@ -13,7 +13,7 @@ ERD dibedakan menjadi 3 model diantaranya yaitu:
 
 Entitas adalah sekumpulan objek yang unik dan berbeda antara satu dengan yang lainnya. Entitas ini digambarkan dengan persegi panjang.  Objek dasarnya cukup beragam, dapat berupa orang, benda informasinya dapat disimpan database. Entitas terbagi menjadi dua yaitu entitas kuat (persegi panjang atas) yang tidak bergantung pada entitas lainnya karena dapat berdiri sendiri sedangkan entitas lemah (persegi panjang bawah) bergantung pada entitas lainnya. 
 
-![Entity]()
+![Entity](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/relational_database/images/entitas.png)
 
 Setiap entitas memiliki atribut mendeskripsikan karakteristik entitas tersebut. Atribut pun terbagi menjadi beberapa jenis diantaranya yaitu :
 

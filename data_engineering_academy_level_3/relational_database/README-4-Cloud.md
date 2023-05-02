@@ -2,7 +2,7 @@
 
 ### **On Cloud**
 
-![On Cloud]()
+![On Cloud](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/relational_database/images/on%20cloud.png)
 
 Pada teknologi on cloud memungkinan iternet menjadi pusat untuk mengelola database dan juga aplikasi yang hanya bisa diakses bagi oleh pemilik hak akses. Singkatnya penyimpanan database organisasi atau perusahaan di platform cloud computing seperti Goole Cloud Platform, Amazon Wewb Services atau Microsoft Azure. Dengan teknologi cloud tidak hanya database dan aplikasi atau perangkat lunak yang dapat berbagi layanan internet namun juga server, jaringan serta penyimpanan. Layanan yang didapatkan dari cloud provider dibayar oleh pengguna secara "Pay as You Go" sehingga pengguna dapat membayar sesuai kebutuhan baik untuk meningkatkan atau menurunkan penggunaan dengan begitu maka pengguna dapat menekan biaya alih-alih membeli atau upgrade server.
 
@@ -41,15 +41,17 @@ Jenis yang dikembangkan oleh Google dan biasa digunakan web atau aplikasi mobile
 * Remote Config
 
 4. **SimpleDB**
+
 Jika yang tadi dikembangkan oleh Google maka jenis yang ini dikembangkan oleh Amazon Web Service dan sama seperti MongoDB karena dapat menyimpan data semi-terstruktur dengan kemudahan dalam setup dan konfigurasi namun skala yang kecil. SimpleDB menyediakan fasilitas berupa pemrosesan serta pemrosesan permintaan dan juga penyimpanan cloud selain itu juga tersedia layanan fitur yang rata-rata berbasis data tradisional. Berbeda dengan MongoDB dan Firebase jenis ini menyimpan data yang terstruktur. Namun sayangnya SimpleDB memiliki kelemahan dalam hal konsistensi dan keterbatasan penyimpanan.
 
 5. **Big Table**
+
 Cloud database jenis ini biasanya digunakan untuk aplikasi dengan kebutuhan skala dan kinerja yang tinggi karena satu-satunya Cloud Big Table yang dapat diskalakan menjadi ribuan kolom dengan miliaran baris sehingga dapat menyimpan terabyte dan petabyte. Dengan penyimpanan yang dikhususkan untuk data terstruktur yang berkaitan dengan pencarian internet atau operasi layanan web sehingga jenis ini menyediakan skalabilitas tinggi. 
 
 
 ### **On Premise**
 
-![On Premise]()
+![On Premise](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/relational_database/images/on%20premise.png)
 
 Jika on cloud database disimpan di cloud maka on premise sebaliknya database dan segala sesuatunya disimpan oleh organisasi atau perusahaan itu sendiri atau istilahnya adalah disimpan secara in-house karena organisasi aatu perusahaan tersebut yang akan mengelola seluruh infrastruktur. Metode ini dapat digunakan pada organisasi atau perusahaan yang memiliki cukup ruang untuk menyimpan perangkat infrastruktur database tersebut dan mampu mengelolanya. 
  

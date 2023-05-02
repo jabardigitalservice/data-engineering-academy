@@ -25,7 +25,8 @@ Perintah DCL ini berfungsi untuk pengendalian akses data dan server database. Se
 Demikian beberapa kelompok perintah SQL sesuai dengan konteksnya masing-masing, namun selain perintah di atas masih banyak perintah dasar SQL yang sering digunakan diantaranya sebagai berikut. 
 
 ![SQL Dasar](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/relational_database/images/sql%20dasar.png)
-___
+
+
 ## **Membuat View dan Datamart dengan SQL**
 
 ### **View**
@@ -89,7 +90,7 @@ Berikut contoh datamart dengan menggunakan SQL. Pertama tentu membuat database l
 
 
 ![Table](https://github.com/jabardigitalservice/data-engineering-academy/blob/c6f08ec0a8fbe6a8e9f345f8bc79700a8a24ce79/data_engineering_academy_level_3/relational_database/images/dm-88.png)
-___
+
 
 ## **SQL Advance Part 1 (Trigger)**
 

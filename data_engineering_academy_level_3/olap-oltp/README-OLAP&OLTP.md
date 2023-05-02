@@ -54,7 +54,7 @@ Kebalikan dari ROLAP dengan MOLAP penyimpanan data dilakukan dalam specialised m
 3. **HOLAP (Hybrid Online Analytical Processing)**
 
 HOLAP dapat memudahkan dan memungkinkan menganalisis data serta mengambil keputusan dalam penyimpanan data menggunakan struktur ROLAP atau MOLAP karena HOLAP gabungan dari kedua struktur tersebut.
- ___
+
 
 ## **OLTP**
 
@@ -68,7 +68,7 @@ Data OLTP juga merupakan current data yang detail karena dirancang menggunakan E
 
 Lalu kapan penggunaan OLTP dibutuhkan? Penggunaan OLTP dapat digunakan saat dibutuhkan proses serta penyimpanan data transaksi yang efisien dan dapat tesedia secara konsisten. 
 
-![OLAP vs OLTP](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/relational_database/images/olap%20vs%20oltp.png)
+![OLAP vs OLTP](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/olap-oltp/images/olap%20vs%20oltp.png)
 
 ## **OLAP vs OLTP**
 
