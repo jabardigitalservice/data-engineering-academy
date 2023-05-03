@@ -15,13 +15,13 @@ Namun sumber data tidak hanya didapatkan dari GPS namun ada beberapa sumber data
 
 ### 1. **Peta Analog**
 
-![Peta Analog]()
+![Peta Analog](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/extra/images/peta%20analog.png)
 
 Sumber data trasional dan tertua berbentuk cetak yang dibuat dengan gulungan kertas besar dan menunjukkan data lokasi tertentu. Namun di era ini bentuk dan ukurannya sudah minimal dan mudah diakses dari ponsel pintar.
 
 ### 2. **Peta Rupa Bumi**
 
-![Peta RBI]()
+![Peta RBI](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/extra/images/peta%20rupa%20bumi.png)
 
 Peta yang satu ini menggambarkan macam-macam unsur pada permukaan bumi mulai dari yang alamiah hingga buatan. Indonesia memiliki peta rupa bumi yang disebut peta RBI atau peta Rupa Bumi Indonesia. Peta RBI jenis ini memiliki tujuh kategori yaitu:
 
@@ -55,7 +55,7 @@ Peta yang satu ini menggambarkan macam-macam unsur pada permukaan bumi mulai dar
 
 ### 3. **Penginderaan Jauh**
 
-![Penginderaan Jauh]()
+![Penginderaan Jauh](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/extra/images/penginderaan%20jauh.png)
 
 Data ini dikumpulkan cara pemantauan jaraj jauh yang menggunakan teknologi berupa satelit, pesawat, drone atau kapal. Bentuk data yang dihasilkan dari penginderaan jauh ii berupa gambar raster yang nantinya dapat diolah atau dianalisis.  
 
@@ -64,7 +64,7 @@ Data ini dikumpulkan cara pemantauan jaraj jauh yang menggunakan teknologi berup
 
 Hasil data rekaman dari data spasial berkaitan dengan indikator geografis yang memiliki 2 jenis data yaitu data vektor dan data raster. Data berupa titik, garis atau poligon yang menggambarkan jalan, kota, pegunungan atau bangunan serta badan air disebut data vektor. Pada data vektor titik menggambarkan rumah, garis menggambarkan jalan dan seluruh kota digambarkan dengan poligon. Sedangkan sel piksel atau grid yang diidentifikasi berdasarkan baris dan kolom disebut dengan data raster. Citra yang dihasilkan data raster lebih kompleks layaknya citra satelit atau foto.
 
-![Vektor Raster]()
+![Vektor Raster](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/extra/images/spasial.png)
 
 ### **Vektor**
 
@@ -74,14 +74,14 @@ Kelebihan model ini adalah keakuratan representasi unsur berupa titik, garis dan
 
 Pada peta umumnya model data vektor ditemukan berupa jaringan sungai atau jalan dan juga berupa garis batas suatu wilayah.
 
-![Vektor]()
+![Vektor](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/extra/images/vektor-raster.png)
 
 ### **Raster**
 
 Data model ini didapatkan dari penginderaan jauh menggunakan satelit yang akan menghasilkan pixel element representasi dari objek geografis. Piksel tersebut akan disusun pada suatu grid atau petak dan setiap piksel tersusun akan memiliki warna berbeda yang kemudian membentuk suatu bidang. Bidang tersebut digunakan oleh data raster untuk menyimpan, menempatkan dan menampilkan data spasial. 
 Model raster memiliki sifat resolution-dependent yang artunya ukuran piksel akan sangat mempengaruhi kualitas resolusi data raster. 
 
-![Raster]()
+![Raster](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/extra/images/vektor-raster-2.png)
 
 ## **Perbandingan Vektor dan Raster** 
 
@@ -101,7 +101,7 @@ Model raster memiliki sifat resolution-dependent yang artunya ukuran piksel akan
 
 Pemrosesan baik pengelolaan atau analisis data spasial bergantung pada model data. Pemrosesan tersebut berdasarkan kebutuhan dan analitik. Pemrosesan data spasial tersebut dapat dilakukan dengan beberapa teknik geoprocessing sebagai berikut.
 
-![Pemrosesan]()
+![Pemrosesan](https://github.com/jabardigitalservice/data-engineering-academy/blob/content_temp/data_engineering_academy_level_3/extra/images/pemrosesan.png)
 
 
 
